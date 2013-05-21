@@ -3,6 +3,7 @@ extends layout
 block header
 
 block content
-	div
-		a(id='sender')='Send a Message'
-		ul(id='receiver')
+	video(width='640', height='360', controls='controls')
+		source(src='/media/h264-webvtt.m4v', type='video/mp4')
+		source(src='/media/vp8-webvtt.webm', type='video/webm')
+		track(kind='subtitles', src='/media/webvtt.vtt', label='subs', srclang='en-US', default)

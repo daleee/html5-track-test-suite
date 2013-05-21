@@ -1,1 +1,3 @@
 node_modules
+Movies/*
+.DS_Store
